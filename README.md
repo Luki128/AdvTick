@@ -1,7 +1,8 @@
 # AdvTick
 Lib in C for AVR
  *  Medium complex mechanism, with parallels blocks tak allows use delay(sleep) and restoring context
- *  I not give any warranty of that 
+ *  I not give any warranty of that
+
 example 1:
 ```c
 #include <avr/io.h>
@@ -28,6 +29,7 @@ int main( void ) {
      }                                                    
 }                                                                                                         
 ```
+
 Example loop
 ```c
 #include <avr/io.h>

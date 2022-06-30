@@ -18,12 +18,12 @@ int main( void ) {
      while(1){                                                                                             
           LOCK( TIMER_1 ){              
               SLEEP(300); 
-              PORTD ^= (1<<PD1);//blik ~ 300ms          
+              PORTD ^= (1<<PD1);//blink ~ 300ms          
           }                                  
            
           LOCK( TIMER_2 ){                                         
               SLEEP(1000);        
-              PORTD ^= (1<<PD2);//blik ~ 1000ms     
+              PORTD ^= (1<<PD2);//blink ~ 1000ms     
           }    
           TICK;//one tick 1ms
      }                                                    
@@ -47,19 +47,19 @@ int main( void ) {
           LOCK( TIMER_1 ){              
               for(i=0;i<3;i++){
                 SLEEP(300); 
-                PORTD ^= (1<<PD1);//blik ~ 300ms  
+                PORTD ^= (1<<PD1);//blink ~ 300ms  
               }
               END_LOOP(); 
               for(i=0;i<3;i++){
                 SLEEP(600); 
-                PORTD ^= (1<<PD1);//blik ~ 300ms  
+                PORTD ^= (1<<PD1);//blink ~ 300ms  
               }
               END_LOOP(); 
           }                                  
            
           LOCK( TIMER_2 ){                                         
               SLEEP(1000);        
-              PORTD ^= (1<<PD2);//blik ~ 1000ms     
+              PORTD ^= (1<<PD2);//blink ~ 1000ms     
           }    
           TICK;//one tick 1ms
      }                                                    
